@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class MyController {
 
+    @GetMapping("/hi")
+    public String hi() {
+        return "hi";
+    }
+
     @GetMapping("/data")
     public String getData() {
-        return "{\"message\": \"Hello, World!\"}";
+        return "{\"message\": \"Hello, World!!!\"}";
     }
 }
